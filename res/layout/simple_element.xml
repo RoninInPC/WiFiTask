@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@id/icon"
+        android:layout_width="74.0dip"
+        android:layout_height="76.0dip"
+        app:layout_constraintEnd_toStartOf="@id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center" android:id="@id/name"
+        android:layout_width="107.0dip" android:layout_height="47.0dip"
+        app:layout_constraintBottom_toTopOf="@id/password"
+        app:layout_constraintEnd_toStartOf="@id/info"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="12.0sp"
+        android:textColor="@color/white"
+        android:id="@id/info"
+        android:background="@drawable/animation_click"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:text="Информация"
+        app:layout_constraintEnd_toStartOf="@id/brut"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="12.0sp"
+        android:textColor="@color/white"
+        android:id="@id/brut"
+        android:background="@drawable/animation_click"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:text="Брутфорс"
+        app:layout_constraintEnd_toStartOf="@id/connect"
+        app:layout_constraintStart_toEndOf="@id/info"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@id/password"
+        android:layout_width="107.0dip"
+        android:layout_height="47.0dip"
+        app:layout_constraintEnd_toStartOf="@id/info"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="12.0sp"
+        android:textColor="@color/white"
+        android:id="@id/connect"
+        android:background="@drawable/animation_click"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:text="Подключение"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@id/brut"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
